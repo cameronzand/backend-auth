@@ -8,6 +8,10 @@ class User extends Lucid {
     return this.hasMany('App/Model/Token')
   }
 
+  links () {
+  	return this.hasMany('App/Model/Link')
+  }
+
 }
 
 module.exports = User
